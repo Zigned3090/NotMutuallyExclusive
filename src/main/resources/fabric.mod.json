@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "nme",
+  "version": "${version}",
+
+  "name": "Not Mutually Exclusive",
+  "description": "This mod makes the enchantments in vanilla no longer mutually exclusive.",
+  "authors": [
+    "Zigned!"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/nme/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mc.z1gned.nme.ModMain"
+    ]
+  },
+  "mixins": [
+    "nme.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
